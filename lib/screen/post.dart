@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:study_app_flutter/data/model/Post.dart';
+import 'package:study_app_flutter/model/Post.dart';
 import 'dart:async';
-import 'package:study_app_flutter/data/network.dart';
+import 'package:study_app_flutter/data/network/NetworkService.dart';
 
 class PostScreen extends StatefulWidget {
   @override

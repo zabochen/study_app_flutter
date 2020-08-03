@@ -43,6 +43,24 @@ class HomeScreenState extends State<HomeScreen> {
                 context.navigateTo("/postScreen");
               },
             ),
+            RaisedButton(
+              child: Text("Open Comment Screen"),
+              onPressed: () {
+                context.navigateTo("/commentScreen");
+              },
+            ),
+            RaisedButton(
+              child: Text("Open Preferences Screen"),
+              onPressed: () {
+                context.navigateTo("/preferencesScreen");
+              },
+            ),
+            RaisedButton(
+              child: Text("Open Counter Screen"),
+              onPressed: () {
+                context.navigateTo("/counterScreen");
+              },
+            ),
           ],
         ),
       ),
@@ -83,6 +101,7 @@ class HomeScreenState extends State<HomeScreen> {
           Scaffold.of(context).showSnackBar(SnackBar(
             content: Text("Message"),
           ));
+          _currentIndex++;
         },
       ),
     );
